@@ -100,7 +100,7 @@ if __name__ == "__main__":
     #Əkənin Qabildi peysər get öz reponu yarat osturax
     if os.path.isdir("./NEONuserbot/"):
         rm_r("./NEONuserbot/")
-    repo = eval('Repo.clone_from("https://github.com/TheOksigen/NEONuserbot", "./NEONuserbot/", branch="master")')
+    repo = eval('Repo.clone_from("https://github.com/TheOksigen/neon_userbot", "./neon_userbot/", branch="master")')
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/TheOksigen/NEONuserbot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/TheOksigen/neon_userbot"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
     config['LANGUAGE'] = LANGUAGE
